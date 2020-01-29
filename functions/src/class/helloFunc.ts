@@ -1,5 +1,6 @@
 import * as functions from 'firebase-functions';
 import { HelloExec } from './hello-exec';
+import { HelloIf } from '../../model/hello';
 
 
 const f = functions.region("us-central1");
@@ -18,9 +19,10 @@ const helloFunc = f.firestore
 
     console.log('test helloFunc')
 
-    const helloExec = new HelloExec()
-    return helloExec.test();
-  
+    const helloExec = new HelloExec();
+    const aaa: HelloIf = {aaa: 'ss'};
+    return helloExec.test(aaa);
+
 })
 
 module.exports = helloFunc;
