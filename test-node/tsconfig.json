@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module":"commonjs",
+    "target": "ES6",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    // "strict": true,
+    "rootDir": "../",
+    "outDir": "./lib",
+    "baseUrl": ".",
+    "lib": [ "es2015","dom" ],
+    "sourceMap": true
+  },
+  "include": [
+    "../functions/interface/**/*",
+    "../functions/src/**/*",
+    "./src/**/*",
+  ],
+  "exclude": [
+    "../functions/src/index.ts"
+  ]
+}
