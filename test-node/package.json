@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "tsc -p tsconfig.json",
-    "copy": "cp -r ../secret/ ./lib/test_node/src",
+    "copy": "cp -r ../secret/ ./lib/test-node/src",
     "build": "npm run compile && npm run copy"
   },
   "author": "",
